@@ -6,17 +6,80 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		E1E051E3177DCF8200D3B658 /* Install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E1E051E4177DCF8200D3B658 /* Build configuration list for PBXAggregateTarget "Install" */;
+			buildPhases = (
+				E1E051E8177DCF8E00D3B658 /* CopyFiles */,
+			);
+			dependencies = (
+				E1E051E7177DCF8B00D3B658 /* PBXTargetDependency */,
+			);
+			name = Install;
+			productName = Install;
+		};
+		E1E051EA177DCFB000D3B658 /* Everything */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E1E051EB177DCFB000D3B658 /* Build configuration list for PBXAggregateTarget "Everything" */;
+			buildPhases = (
+			);
+			dependencies = (
+				E1E051EE177DCFB400D3B658 /* PBXTargetDependency */,
+			);
+			name = Everything;
+			productName = Everything;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		E1E051CC177DCCD300D3B658 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E051CB177DCCD300D3B658 /* CoreFoundation.framework */; };
 		E1E051D2177DCCD300D3B658 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1E051D0177DCCD300D3B658 /* InfoPlist.strings */; };
+		E1E051DE177DCDF600D3B658 /* NewFunctionDemoPlugin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1E051DC177DCDF600D3B658 /* NewFunctionDemoPlugin.cpp */; };
+		E1E051E0177DCEFD00D3B658 /* MWorksCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E051DF177DCEFD00D3B658 /* MWorksCore.framework */; };
+		E1E051E2177DCF1700D3B658 /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E051E1177DCF1700D3B658 /* libboost_system.a */; };
+		E1E051E9177DCF9800D3B658 /* NewFunctionDemo.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1E051C8177DCCD300D3B658 /* NewFunctionDemo.bundle */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1E051E6177DCF8B00D3B658 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1E051C0177DCCD300D3B658 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1E051C7177DCCD300D3B658;
+			remoteInfo = NewFunctionDemo;
+		};
+		E1E051ED177DCFB400D3B658 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1E051C0177DCCD300D3B658 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1E051E3177DCF8200D3B658;
+			remoteInfo = Install;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E1E051E8177DCF8E00D3B658 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(MW_PLUGINS_DIR)";
+			dstSubfolderSpec = 0;
+			files = (
+				E1E051E9177DCF9800D3B658 /* NewFunctionDemo.bundle in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E1E051C8177DCCD300D3B658 /* NewFunctionDemo.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewFunctionDemo.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1E051CB177DCCD300D3B658 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		E1E051CF177DCCD300D3B658 /* NewFunctionDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NewFunctionDemo-Info.plist"; sourceTree = "<group>"; };
 		E1E051D1177DCCD300D3B658 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E1E051D3177DCCD300D3B658 /* NewFunctionDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NewFunctionDemo-Prefix.pch"; sourceTree = "<group>"; };
+		E1E051DA177DCD5400D3B658 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		E1E051DB177DCD5400D3B658 /* WARNING.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = WARNING.txt; sourceTree = "<group>"; };
+		E1E051DC177DCDF600D3B658 /* NewFunctionDemoPlugin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NewFunctionDemoPlugin.cpp; sourceTree = "<group>"; };
+		E1E051DF177DCEFD00D3B658 /* MWorksCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MWorksCore.framework; path = /Library/Frameworks/MWorksCore.framework; sourceTree = "<absolute>"; };
+		E1E051E1177DCF1700D3B658 /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = "/Library/Application Support/MWorks/Developer/lib/libboost_system.a"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,7 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1E051CC177DCCD300D3B658 /* CoreFoundation.framework in Frameworks */,
+				E1E051E0177DCEFD00D3B658 /* MWorksCore.framework in Frameworks */,
+				E1E051E2177DCF1700D3B658 /* libboost_system.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +98,7 @@
 		E1E051BF177DCCD300D3B658 = {
 			isa = PBXGroup;
 			children = (
+				E1E051D9177DCD2F00D3B658 /* External Config */,
 				E1E051CD177DCCD300D3B658 /* NewFunctionDemo */,
 				E1E051CA177DCCD300D3B658 /* Frameworks */,
 				E1E051C9177DCCD300D3B658 /* Products */,
@@ -51,7 +116,8 @@
 		E1E051CA177DCCD300D3B658 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E1E051CB177DCCD300D3B658 /* CoreFoundation.framework */,
+				E1E051DF177DCEFD00D3B658 /* MWorksCore.framework */,
+				E1E051E1177DCF1700D3B658 /* libboost_system.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -59,6 +125,7 @@
 		E1E051CD177DCCD300D3B658 /* NewFunctionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E1E051DC177DCDF600D3B658 /* NewFunctionDemoPlugin.cpp */,
 				E1E051CE177DCCD300D3B658 /* Supporting Files */,
 			);
 			path = NewFunctionDemo;
@@ -73,6 +140,16 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		E1E051D9177DCD2F00D3B658 /* External Config */ = {
+			isa = PBXGroup;
+			children = (
+				E1E051DA177DCD5400D3B658 /* Development.xcconfig */,
+				E1E051DB177DCD5400D3B658 /* WARNING.txt */,
+			);
+			name = "External Config";
+			path = "/Library/Application Support/MWorks/Developer/Xcode";
+			sourceTree = "<absolute>";
 		};
 /* End PBXGroup section */
 
@@ -116,6 +193,8 @@
 			projectRoot = "";
 			targets = (
 				E1E051C7177DCCD300D3B658 /* NewFunctionDemo */,
+				E1E051E3177DCF8200D3B658 /* Install */,
+				E1E051EA177DCFB000D3B658 /* Everything */,
 			);
 		};
 /* End PBXProject section */
@@ -136,10 +215,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1E051DE177DCDF600D3B658 /* NewFunctionDemoPlugin.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1E051E7177DCF8B00D3B658 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1E051C7177DCCD300D3B658 /* NewFunctionDemo */;
+			targetProxy = E1E051E6177DCF8B00D3B658 /* PBXContainerItemProxy */;
+		};
+		E1E051EE177DCFB400D3B658 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1E051E3177DCF8200D3B658 /* Install */;
+			targetProxy = E1E051ED177DCFB400D3B658 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E1E051D0177DCCD300D3B658 /* InfoPlist.strings */ = {
@@ -153,88 +246,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		E1E051D4177DCCD300D3B658 /* Debug */ = {
+		E1E051D4177DCCD300D3B658 /* Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1E051DA177DCD5400D3B658 /* Development.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
 			};
-			name = Debug;
+			name = Development;
 		};
-		E1E051D5177DCCD300D3B658 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		E1E051D7177DCCD300D3B658 /* Debug */ = {
+		E1E051D7177DCCD300D3B658 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NewFunctionDemo/NewFunctionDemo-Prefix.pch";
 				INFOPLIST_FILE = "NewFunctionDemo/NewFunctionDemo-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
-			name = Debug;
+			name = Development;
 		};
-		E1E051D8177DCCD300D3B658 /* Release */ = {
+		E1E051E5177DCF8200D3B658 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NewFunctionDemo/NewFunctionDemo-Prefix.pch";
-				INFOPLIST_FILE = "NewFunctionDemo/NewFunctionDemo-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = bundle;
 			};
-			name = Release;
+			name = Development;
+		};
+		E1E051EC177DCFB000D3B658 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Development;
 		};
 /* End XCBuildConfiguration section */
 
@@ -242,17 +293,30 @@
 		E1E051C3177DCCD300D3B658 /* Build configuration list for PBXProject "NewFunctionDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E1E051D4177DCCD300D3B658 /* Debug */,
-				E1E051D5177DCCD300D3B658 /* Release */,
+				E1E051D4177DCCD300D3B658 /* Development */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Development;
 		};
 		E1E051D6177DCCD300D3B658 /* Build configuration list for PBXNativeTarget "NewFunctionDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E1E051D7177DCCD300D3B658 /* Debug */,
-				E1E051D8177DCCD300D3B658 /* Release */,
+				E1E051D7177DCCD300D3B658 /* Development */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+		E1E051E4177DCF8200D3B658 /* Build configuration list for PBXAggregateTarget "Install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1E051E5177DCF8200D3B658 /* Development */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E1E051EB177DCFB000D3B658 /* Build configuration list for PBXAggregateTarget "Everything" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1E051EC177DCFB000D3B658 /* Development */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
