@@ -2,6 +2,8 @@
 // Prefix header for all source files of the 'NewFunctionDemo' target in the 'NewFunctionDemo' project
 //
 
-#ifdef __OBJC__
-    #import <Cocoa/Cocoa.h>
+#ifdef __cplusplus
+    #include <boost/random/mersenne_twister.hpp>
+    #include <boost/random/uniform_int_distribution.hpp>
+    #include <MWorksCore/Plugin.h>
 #endif
