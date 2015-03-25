@@ -10,12 +10,12 @@
 using namespace mw;
 
 
-static stx::AnyScalar get_num_trials(const stx::SymbolTable::paramlist_type& paramlist) {
-    if (!(paramlist[0].isStringType())) {
+static Datum get_num_trials(const stx::SymbolTable::paramlist_type& paramlist) {
+    if (!(paramlist[0].isString())) {
         throw stx::BadFunctionCallException("First parameter to function get_num_trials() must be a string");
     }
     
-    if (!(paramlist[1].isIntegerType()) || (paramlist[1].getInteger() < 1)) {
+    if (!(paramlist[1].isInteger()) || (paramlist[1].getInteger() < 1)) {
         throw stx::BadFunctionCallException("Second parameter to function get_num_trials() must be a positive integer");
     }
     
@@ -28,7 +28,7 @@ static stx::AnyScalar get_num_trials(const stx::SymbolTable::paramlist_type& par
     static boost::random::mt19937 gen;
     int result = boost::random::uniform_int_distribution<>(1, lineNumber)(gen);
     
-    return stx::AnyScalar(result);
+    return Datum(result);
 }
 
 
